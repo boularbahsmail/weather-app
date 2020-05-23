@@ -3,8 +3,10 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #fff;
     background-image: url("background.svg");
+    margin: 0;
+    padding: 0;
 }
 
 #footer{
