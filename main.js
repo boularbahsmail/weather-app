@@ -44,9 +44,9 @@ function showError(error){
 
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${"cbef3152c5188895773562e9e73e80da"}`;
+    // let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${"cbef3152c5188895773562e9e73e80da"}`;
     
-    const fetchData  = fetch(api)
+    const fetchData  = fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${"cbef3152c5188895773562e9e73e80da"}`)
         .then(function(response){
             let data = response.json();
             return data;
